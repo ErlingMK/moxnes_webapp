@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div className={"relative"}>
             <Image src={frontPagePhoto} alt={"Picture of old couple"}/>
-            <div className={"bg-black/70 border-1 absolute top-14 mx-5 p-5 w-3/4"}>
+            <div className={"bg-black/30 border-1 absolute top-14 mx-5 p-5 w-3/4"}>
                 <p className={"text-sm text-white text-left "}>Contrary to popular belief, Lorem Ipsum is not
                     simply
                     random text.
