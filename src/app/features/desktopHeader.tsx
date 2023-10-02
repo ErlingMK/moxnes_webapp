@@ -1,17 +1,13 @@
 import Link from "next/link";
 import {pages} from "@/app/utility";
 import {usePathname} from "next/navigation";
+import TitleHeader from "@/app/features/titleHeader";
 
 export default function DesktopHeader() {
     let pathname = usePathname();
     return (
         <div className={"flex flex-row p-6 justify-between sticky top-0 z-10 bg-white"}>
-            <div className={"flex flex-col"}>
-                <h1 className={"font-bold text-2xl"}>Liv Mette Moxnes</h1>
-                <h2 className={"font-light"}>Jurist og Coach</h2>
-                <h3 className={"font-light"}>Autorisert av tilsynsrådet for advokat virksomhet</h3>
-            </div>
-
+            <TitleHeader/>
             <div className={"flex flex-col items-end"}>
                 <div className={"flex flex-row gap-5 items-start"}>
                     {pages.map(page => {

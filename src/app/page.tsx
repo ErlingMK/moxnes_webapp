@@ -5,23 +5,13 @@ export default function Home() {
     return (
         <div className={"relative"}>
             <Image src={frontPagePhoto} alt={"Picture of old couple"}/>
-            <div className={"bg-black/30 border-1 absolute top-14 mx-5 p-5 w-3/4"}>
-                <p className={"text-sm text-white text-left "}>Contrary to popular belief, Lorem Ipsum is not
-                    simply
-                    random text.
-                    It has
-                    roots in
-                    a piece
-                    of classical
-                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from
-                    a
-                    Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et
-                    Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
-                    theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum
-                    dolor
-                    sit amet.., comes from a line in section 1.10.32.</p>
+            <div className={"bg-black/50 md:bg-black/30 border-1 absolute top-14 mx-5 p-5 w-3/4"}>
+                <p className={"text-white text-left "}>Hvordan vil du ha det i fremtiden? Hvem vil du at skal
+                    opptre på dine vegne og ivareta dine økonomiske og personlige forhold?</p>
+                <br/>
+                <p className={"text-white text-left "}>Som et alternativ vergemålsordningen, kan du opprette en
+                    fremtidsfullmakt. Denne vil legge til rette for utøvelse av selvbestemmelse, rett over eget
+                    privatliv for fremtidige situasjoner der man ikke lenger er i stand til å treffe beslutninger.</p>
             </div>
         </div>
     )
