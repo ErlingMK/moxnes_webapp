@@ -1,23 +1,23 @@
 export interface Page {
-    title: string,
-    link: string
+  title: string;
+  link: string;
 }
 
 export const pages: Page[] = [
-    {
-        title: "Hjem",
-        link: "/",
-    },
-    {
-        title: "Om meg",
-        link: "about"
-    },
-    {
-        title: "Fremtidsfullmakt",
-        link: "services"
-    },
-    {
-        title: "Priser",
-        link: "prices"
-    },
-]
+  {
+    title: "Hjem",
+    link: "/",
+  },
+  {
+    title: "Fremtidsfullmakt",
+    link: "services",
+  },
+  {
+    title: "Priser",
+    link: "prices",
+  },
+  {
+    title: "Om meg",
+    link: "about",
+  },
+];
