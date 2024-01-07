@@ -8,7 +8,7 @@ export default function DesktopHeader() {
   return (
     <div className={"flex flex-row p-6 justify-between sticky top-0 z-10"}>
       <TitleHeader />
-      <div className={"flex flex-col items-end"}>
+      <div className={"flex flex-col items-end text-soft-blue-gray"}>
         <div className={"flex flex-row gap-5 items-start"}>
           {pages.map((page) => {
             let className = "p-2 hover:underline hover:scale-110";

@@ -10,6 +10,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "soft-blue-gray": "#5D7290",
+        "light-gray-secondary": "#F0F4F8",
+        "muted-teal": "#88A0A8",
+        "dark-gray": "#333333",
+        "light-gray": "#FAFAFA",
+      },
+      fontFamily: {
+        cursive: ['"Brush Script MT"', "cursive"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
