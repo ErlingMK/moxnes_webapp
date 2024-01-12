@@ -31,14 +31,16 @@ export default function Contact() {
 
           <Input name="phone" type="tel" header="Telefon" />
 
-          <div className={"flex items-start"}>
+          <div className={"flex items-center"}>
             <input
               className={"m-2"}
               type="checkbox"
               id="preferEmail"
               name="preferEmail"
             />
-            <label htmlFor="preferEmail">Foretrekk e-post</label>
+            <label htmlFor="preferEmail">
+              Jeg foretrekker å bli kontaktet på e-post
+            </label>
           </div>
           <SendButton />
         </fieldset>
