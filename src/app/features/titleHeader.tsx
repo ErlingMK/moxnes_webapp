@@ -1,4 +1,3 @@
-import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 
 export default function TitleHeader() {
