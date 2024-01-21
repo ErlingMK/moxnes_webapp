@@ -1,9 +1,7 @@
 "use client";
 
-import { experimental_useFormStatus } from "react-dom";
-
 export function SendButton() {
-  const { pending } = experimental_useFormStatus();
+  const pending = false;
   return (
     <div className={"mt-5"}>
       <button
