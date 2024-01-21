@@ -130,11 +130,11 @@ export default function Services() {
             header="Fremtidsfullmakt er beskrevet i Vergemålsloven §78"
             content={
               <div>
-                "«En fremtidsfullmakt er en fullmakt til en eller flere personer
+                «En fremtidsfullmakt er en fullmakt til en eller flere personer
                 om å representere fullmaktgiveren etter at fullmaktgiveren på
                 grunn av sinnslidelse, herunder demen , eller alvorlig svekket
                 helbred ikke lenger er i stand til å ivareta sine interesser
-                innen de områdene som omfattes av fullmakten.»"
+                innen de områdene som omfattes av fullmakten.»
               </div>
             }
           />
