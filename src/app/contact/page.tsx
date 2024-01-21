@@ -11,6 +11,8 @@ export default function Contact() {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  let test = 2;
+
   return (
     <div className={"p-5"}>
       <form
