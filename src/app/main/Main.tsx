@@ -91,23 +91,19 @@ export function Main() {
           Om du ikke har en fremtidsfullmakt når du blir syk kan det bli
           oppnevnt verge etter vergemålsloven.
         </p>
-        <CollapsablePanel
-          header=""
-          content={
-            <div>
-              <p>
-                I vergemålsloven er det klare rammer for hva en verge kan gjøre
-                på dine vegne. Da vil det være bestemmelsene i vergemålsloven
-                som gjelder om oppnevnelse av verge og hvilke områder og hvilke
-                måter den kan som er oppnevnt som verge må opptre på.
-                <strong>
-                  {" "}
-                  Fremtidsfullmakt kan derimot skreddersys etter dine behov.
-                </strong>
-              </p>
-            </div>
-          }
-        />
+        <br />
+        <div>
+          <p>
+            I vergemålsloven er det klare rammer for hva en verge kan gjøre på
+            dine vegne. Da vil det være bestemmelsene i vergemålsloven som
+            gjelder om oppnevnelse av verge og hvilke områder og hvilke måter
+            den kan som er oppnevnt som verge må opptre på.
+            <strong>
+              {" "}
+              Fremtidsfullmakt kan derimot skreddersys etter dine behov.
+            </strong>
+          </p>
+        </div>
       </div>
 
       <div>
@@ -119,53 +115,44 @@ export function Main() {
           som du kan bruke. Det kan være rimelig og enkelt nå, men kan fort bli
           dyrt og skape problemer når fullmakten trer i kraft.
         </p>
-
-        <CollapsablePanel
-          header=""
-          content={
-            <div>
-              {" "}
-              <p>
-                Eksempler på hva man bør tenke nøye igjennom kan være; når egne
-                barn oppnevnes ofte som fullmektiger og har du flere barn er det
-                viktig å tenke dette nøye igjennom. Skal for eksempel bare en
-                være fullmektig eller skal de være fullmektiger sammen, eller
-                skal de dekke hvert sitt område? Ved å få hjelp til å klargjøre
-                hvem som skal være fullmektiger, og presisere fullmektigenes
-                ansvar kan man sikre enighet i familien og hindre konflikter.
-              </p>
-              <br />
-              <p>
-                Et annet eksempel er om det er ektefelle eller samboer som er
-                tenkt å være fullmektig må man vurdere hva som skal skje om
-                ekteskapet eller samboerforholdet oppløses?
-              </p>
-              <br />
-              <p>
-                Og bør den som er fullmektig få en godtgjørelse for arbeidet?
-                Hvor stor skal denne godtgjørelsen være? Bør fullmektigen legge
-                frem regnskap overfor arvingene?
-              </p>
-              <br />
-              <p>
-                Om du vil gi fullmektigen rett til å disponere over eiendom må
-                dette gå klart frem av fullmakten. Kartverket (Grunnboken)
-                krever stadfestelse av fullmakten før tinglysning, og hva som
-                skal skje med gevinsten av salget må reguleres i fullmakten.
-              </p>
-              <br />
-              <p>
-                I tillegg krever noen banker også stadfestelse av fullmakten før
-                fullmektigen kan opptre etter fullmakten.
-              </p>
-              <br />
-              <p>
-                Dette er bare noen få av problemstillingene som kan oppstå og
-                som bør besvares på en tydelig og forståelig måte i fullmakten.
-              </p>
-            </div>
-          }
-        />
+        <div className={"p-5 m-5 bg-slate-200 rounded-lg"}>
+          <h3>Eksempler på hva man bør tenke nøye igjennom kan være:</h3>
+          <br />
+          <ul className={"list-disc px-5 space-y-2"}>
+            <li>
+              Når egne barn oppnevnes ofte som fullmektiger og har du flere barn
+              er det viktig å tenke dette nøye igjennom. Skal for eksempel bare
+              en være fullmektig eller skal de være fullmektiger sammen, eller
+              skal de dekke hvert sitt område? Ved å få hjelp til å klargjøre
+              hvem som skal være fullmektiger, og presisere fullmektigenes
+              ansvar kan man sikre enighet i familien og hindre konflikter.
+            </li>
+            <li>
+              Et annet eksempel er om det er ektefelle eller samboer som er
+              tenkt å være fullmektig må man vurdere hva som skal skje om
+              ekteskapet eller samboerforholdet oppløses?
+            </li>
+            <li>
+              Og bør den som er fullmektig få en godtgjørelse for arbeidet? Hvor
+              stor skal denne godtgjørelsen være? Bør fullmektigen legge frem
+              regnskap overfor arvingene?
+            </li>
+            <li>
+              Om du vil gi fullmektigen rett til å disponere over eiendom må
+              dette gå klart frem av fullmakten. Kartverket (Grunnboken) krever
+              stadfestelse av fullmakten før tinglysning, og hva som skal skje
+              med gevinsten av salget må reguleres i fullmakten.
+            </li>
+            <li>
+              I tillegg krever noen banker også stadfestelse av fullmakten før
+              fullmektigen kan opptre etter fullmakten.
+            </li>
+            <li>
+              Dette er bare noen få av problemstillingene som kan oppstå og som
+              bør besvares på en tydelig og forståelig måte i fullmakten.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
