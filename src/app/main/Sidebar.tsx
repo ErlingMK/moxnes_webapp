@@ -3,7 +3,7 @@ import CollapsablePanel from "../components/CollapsablePanel";
 export function Sidebar() {
   return (
     <div>
-      <div className={"bg-light-gray-secondary p-5 mt-5"}>
+      <div className={"bg-secondary-blue text-white p-5 mt-5 rounded-lg"}>
         <CollapsablePanel
           header="Fremtidsfullmakt er beskrevet i Vergemålsloven §78"
           content={
@@ -18,7 +18,7 @@ export function Sidebar() {
         />
       </div>
 
-      <div className={"bg-light-gray-secondary p-5 mt-5"}>
+      <div className={"bg-secondary-blue text-white p-5 mt-5 rounded-lg"}>
         <CollapsablePanel
           header="Noen forklaringer det er greit å ha med seg"
           content={

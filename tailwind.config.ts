@@ -11,13 +11,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "soft-blue-gray": "#5D7290",
-        "light-gray-secondary": "#F0F4F8",
+        "secondary-blue": "#446591",
+        "light-gray-secondary": "#94b5e0",
         "muted-teal": "#88A0A8",
         "dark-gray": "#333333",
         "light-gray": "#FAFAFA",
-        "main-blue": "#000080",
-        "muted-blue": "#333366",
+        "main-blue": "#3f6699",
+        "muted-blue": "#7b97bd",
       },
       fontFamily: {
         cursive: ['"Brush Script MT"', "cursive"],

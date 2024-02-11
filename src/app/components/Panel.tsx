@@ -5,5 +5,9 @@ export interface PanelProps {
 }
 
 export default function Panel({ content }: PanelProps) {
-  return <div className={"bg-gray-300 p-5 text-black"}>{content}</div>;
+  return (
+    <div className={"bg-secondary-blue p-5 text-white rounded-lg"}>
+      {content}
+    </div>
+  );
 }

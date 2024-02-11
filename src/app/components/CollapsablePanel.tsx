@@ -21,7 +21,7 @@ export default function CollapsablePanel({
     return (
       <div className={"flex flex-col items-start"}>
         <h1 className={"font-bold w-max"}>{header}</h1>
-        <button className={"underline text-sm"} onClick={toggleState}>
+        <button className={"underline hover:scale-105"} onClick={toggleState}>
           Trykk for å lese mer
         </button>
       </div>
@@ -33,7 +33,7 @@ export default function CollapsablePanel({
       <h1 className={"font-bold"}>{header}</h1>
       <br />
       {content}
-      <button className={"underline text-sm"} onClick={toggleState}>
+      <button className={"underline hover:scale-105"} onClick={toggleState}>
         Trykk for å skjule
       </button>
     </div>
