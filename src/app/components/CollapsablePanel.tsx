@@ -33,7 +33,6 @@ export default function CollapsablePanel({
       <h1 className={"font-bold"}>{header}</h1>
       <br />
       {content}
-      <br />
       <button className={"underline text-sm"} onClick={toggleState}>
         Trykk for å skjule
       </button>

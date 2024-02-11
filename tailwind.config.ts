@@ -16,6 +16,8 @@ const config: Config = {
         "muted-teal": "#88A0A8",
         "dark-gray": "#333333",
         "light-gray": "#FAFAFA",
+        "main-blue": "#000080",
+        "muted-blue": "#333366",
       },
       fontFamily: {
         cursive: ['"Brush Script MT"', "cursive"],

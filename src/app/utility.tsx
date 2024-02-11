@@ -8,10 +8,10 @@ export const pages: Page[] = [
     title: "Hjem",
     link: "/",
   },
-  {
-    title: "Fremtidsfullmakt",
-    link: "services",
-  },
+  // {
+  //   title: "Fremtidsfullmakt",
+  //   link: "services",
+  // },
   {
     title: "Priser",
     link: "prices",
