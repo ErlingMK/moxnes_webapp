@@ -8,8 +8,8 @@ export default function Input({ name, header }: MulitLineInputProps) {
     <div className={"flex flex-col"}>
       <label htmlFor={name}>{header}</label>
       <textarea
-        cols={40}
-        rows={10}
+        cols={80}
+        rows={12}
         className={
           "m-2 shadow appearance-none border rounded w-full focus:outline-none focus:shadow-outline"
         }

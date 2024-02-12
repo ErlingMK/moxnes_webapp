@@ -23,11 +23,11 @@ export default function Home() {
     }[id];
 
     if (key && key.current) {
-      key.current.scrollIntoView({ behavior: "smooth" });
+      key.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
   return (
-    <div className={"flex flex-col"}>
+    <div className={"flex flex-col gap-5"}>
       <Header scrollTo={scrollTo} />
       <Image src={frontPhoto} alt="photo of life stages" />
       <div className={"p-5 flex flex-row gap-5 items-start"}>
@@ -35,12 +35,15 @@ export default function Home() {
         <Sidebar />
       </div>
       <section ref={aboutSectionRef}>
+        <hr />
         <About />
       </section>
       <section ref={pricesSectionRef}>
+        <hr />
         <Prices />
       </section>
       <section ref={contactSectionRef}>
+        <hr />
         <Contact />
       </section>
     </div>

@@ -4,7 +4,7 @@ import * as SendGrid from "@sendgrid/mail";
 const email = "post@moxnesjus.no";
 
 export async function submitContactForm(formData: FormData) {
-  SendGrid.setApiKey("");
+  SendGrid.setApiKey(process.env.SENDGRID_API_KEY!);
 
   const reply: SendGrid.MailDataRequired = {
     to: formData.get("email")?.toString(),

@@ -3,7 +3,7 @@ import Panel from "../components/Panel";
 export default function About() {
   return (
     <div className={"p-5 flex flex-col gap-5 items-start"}>
-      <h2 className={"text-4xl"}>Hvem er jeg?</h2>
+      <h2 className={"text-3xl "}>Hvem er jeg?</h2>
       <p>
         Jeg er jurist og avla juridisk embetseksamen i 1989. Jeg jobber i dag
         som seniorrådgiver i kriminalomsorgen. I 2016 utdannet jeg meg som coach

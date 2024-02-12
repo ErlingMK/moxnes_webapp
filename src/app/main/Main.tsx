@@ -9,7 +9,7 @@ export function Main() {
           Det er en menneskerettighet å kunne bestemme over seg selv og sitt
           eget liv
         </h1>
-        <p className={"text-lg"}>
+        <p>
           Ethvert individ skal ha rett til- i tråd med sine egne evner og
           forutsetninger – til å forme sitt liv etter sine egne ønsker og ideer.
           En fremtidsfullmakt skal sikre disposisjoner i tråd med

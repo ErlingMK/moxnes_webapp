@@ -17,11 +17,11 @@ export default function DesktopHeader({ scrollTo }: HeaderProps) {
       <div className={"flex flex-col items-end text-white"}>
         <div className={"flex flex-row gap-5 items-start"}>
           {pages.map((page) => {
-            let className = "p-2 hover:underline hover:scale-110";
+            // let className = "p-2 hover:underline hover:scale-110";
 
             return (
               <button
-                id={page.link}
+                key={page.link}
                 onClick={() => scrollTo(page.link)}
                 className={"p-2 hover:underline hover:scale-110"}
               >
@@ -41,7 +41,7 @@ export default function DesktopHeader({ scrollTo }: HeaderProps) {
             );
           })}
           <button
-            id="contact"
+            key="contact"
             className={"bg-sky-500 hover:bg-sky-700 p-2 text-white rounded"}
             onClick={() => scrollTo("contact")}
           >

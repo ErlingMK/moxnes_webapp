@@ -9,10 +9,13 @@ import { submitContactForm } from "../actions/mailAction";
 export default function Contact() {
   const ref = useRef<HTMLFormElement>(null);
 
+  const [requirePhone, setRequirePhone] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <div className={"p-5"}>
+    <div className={"p-5 m-x flex flex-col gap-5"}>
+      <h2 className={"text-3xl "}>Kontakt</h2>
+
       <form
         ref={ref}
         action={async (formData) => {
@@ -20,7 +23,7 @@ export default function Contact() {
           ref.current?.reset();
           setIsSubmitted(true);
         }}
-        className={"flex flex-col gap-2 items-start"}
+        className={"flex flex-col gap-2 items-start mx-2"}
       >
         <fieldset>
           <Input name="name" type="text" header="Fullt navn" />
@@ -29,17 +32,23 @@ export default function Contact() {
 
           <Input name="email" type="email" header="E-post" />
 
-          <Input name="phone" type="tel" header="Telefon" />
+          <Input
+            name="phone"
+            type="tel"
+            header="Telefon"
+            required={requirePhone}
+          />
 
           <div className={"flex items-center"}>
             <input
+              onChange={(e) => setRequirePhone(e.target.checked)}
               className={"m-2"}
               type="checkbox"
               id="preferEmail"
               name="preferEmail"
             />
             <label htmlFor="preferEmail">
-              Jeg foretrekker å bli kontaktet på e-post
+              Huk av hvis du foretrekker å bli kontaktet på telefon
             </label>
           </div>
           <SendButton />
