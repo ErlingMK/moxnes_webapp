@@ -2,13 +2,15 @@ import Link from "next/link";
 import { pages } from "@/app/utility";
 import { usePathname } from "next/navigation";
 import TitleHeader from "@/app/features/titleHeader";
+import { HeaderProps } from "../header";
+import { link } from "fs";
 
-export default function DesktopHeader() {
+export default function DesktopHeader({ scrollTo }: HeaderProps) {
   let pathname = usePathname();
   return (
     <div
       className={
-        "flex flex-row p-6 justify-between sticky top-0 z-10 bg-main-blue"
+        "flex flex-row p-6 justify-between sticky top-0 z-100 bg-main-blue"
       }
     >
       <TitleHeader />
@@ -18,25 +20,33 @@ export default function DesktopHeader() {
             let className = "p-2 hover:underline hover:scale-110";
 
             return (
-              <Link
-                className={
-                  pathname.endsWith(page.link)
-                    ? `${className} underline font-bold`
-                    : className
-                }
-                href={`/${page.link}`}
-                key={page.link}
+              <button
+                id={page.link}
+                onClick={() => scrollTo(page.link)}
+                className={"p-2 hover:underline hover:scale-110"}
               >
                 {page.title}
-              </Link>
+              </button>
+              // <Link
+              //   className={
+              //     pathname.endsWith(page.link)
+              //       ? `${className} underline font-bold`
+              //       : className
+              //   }
+              //   href={`/${page.link}`}
+              //   key={page.link}
+              // >
+              //   {page.title}
+              // </Link>
             );
           })}
-          <Link
+          <button
+            id="contact"
             className={"bg-sky-500 hover:bg-sky-700 p-2 text-white rounded"}
-            href={"/contact"}
+            onClick={() => scrollTo("contact")}
           >
             Kontakt
-          </Link>
+          </button>
         </div>
       </div>
     </div>

@@ -19,6 +19,12 @@ const config: Config = {
         "main-blue": "#3f6699",
         "muted-blue": "#7b97bd",
       },
+      fontSize: {
+        base: "1.25rem",
+        md: "1.5rem",
+        lg: "1.75rem",
+        xl: "2rem",
+      },
       fontFamily: {
         cursive: ['"Brush Script MT"', "cursive"],
       },

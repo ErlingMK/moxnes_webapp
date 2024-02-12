@@ -4,14 +4,12 @@ import { useRef, useState } from "react";
 import Input from "../components/Input";
 import MultiLineInput from "../components/MultiLineInput";
 import { SendButton } from "../components/SendButton";
-import { submitContactForm } from "../serverActions";
+import { submitContactForm } from "../actions/mailAction";
 
 export default function Contact() {
   const ref = useRef<HTMLFormElement>(null);
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  let test = 2;
 
   return (
     <div className={"p-5"}>

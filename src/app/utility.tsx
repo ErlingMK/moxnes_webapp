@@ -4,20 +4,20 @@ export interface Page {
 }
 
 export const pages: Page[] = [
-  {
-    title: "Hjem",
-    link: "/",
-  },
+  // {
+  //   title: "Hjem",
+  //   link: "/",
+  // },
   // {
   //   title: "Fremtidsfullmakt",
   //   link: "services",
   // },
   {
-    title: "Priser",
-    link: "prices",
-  },
-  {
     title: "Om meg",
     link: "about",
+  },
+  {
+    title: "Priser",
+    link: "prices",
   },
 ];
