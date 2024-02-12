@@ -1,5 +1,6 @@
 "use server";
 import * as SendGrid from "@sendgrid/mail";
+import parseResponse from "./mailHelper";
 
 const email = "post@moxnesjus.no";
 
@@ -27,15 +28,7 @@ export async function submitContactForm(formData: FormData) {
 
   let responses = await SendGrid.send([reply, msg]);
 
-  return responses.every((element) => {
-    if (element[0].statusCode != 202) {
-      // send actually returns an array
-      console.log(element);
-      return false;
-    }
-
-    return true;
-  });
+  return parseResponse(responses);
 }
 
 function createTemplate(name: string, message: string) {
