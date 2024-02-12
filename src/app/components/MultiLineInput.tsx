@@ -1,9 +1,14 @@
-export interface MulitLineInputProps {
+import { ChangeEvent } from "react";
+
+export interface MulitLineInputProps<T> {
   name: string;
   header: string;
 }
 
-export default function Input({ name, header }: MulitLineInputProps) {
+export default function Input({
+  name,
+  header,
+}: MulitLineInputProps<HTMLTextAreaElement>) {
   return (
     <div className={"flex flex-col"}>
       <label htmlFor={name}>{header}</label>

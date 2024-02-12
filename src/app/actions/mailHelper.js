@@ -6,6 +6,8 @@ export default function parseResponse(responses) {
       return false;
     }
 
-    return true;
+    console.log(responses);
+    //todo: log error
+    throw new Error("Unable to send mail");
   });
 }

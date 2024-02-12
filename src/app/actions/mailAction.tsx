@@ -5,6 +5,8 @@ import parseResponse from "./mailHelper";
 const email = "post@moxnesjus.no";
 
 export async function submitContactForm(formData: FormData) {
+  console.log(formData);
+
   SendGrid.setApiKey(process.env.SENDGRID_API_KEY!);
 
   const reply: SendGrid.MailDataRequired = {

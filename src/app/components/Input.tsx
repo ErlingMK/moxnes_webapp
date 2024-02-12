@@ -1,11 +1,17 @@
-export interface InputProps {
-  name: string;
+import { ChangeEvent } from "react";
+import { MulitLineInputProps } from "./MultiLineInput";
+
+export interface InputProps<T> extends MulitLineInputProps<T> {
   type: string;
-  header: string;
   required?: boolean;
 }
 
-export default function Input({ name, type, header, required }: InputProps) {
+export default function Input({
+  name,
+  type,
+  header,
+  required,
+}: InputProps<HTMLInputElement>) {
   return (
     <div className={"flex flex-col"}>
       <label htmlFor={name}>{header}</label>
