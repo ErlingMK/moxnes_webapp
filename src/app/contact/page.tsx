@@ -4,23 +4,29 @@ import { FormEvent, useRef, useState } from "react";
 import Input from "../components/Input";
 import MultiLineInput from "../components/MultiLineInput";
 import { submitContactForm } from "../actions/mailAction";
+import { BeatLoader, BounceLoader } from "react-spinners";
 
 export default function Contact() {
   const ref = useRef<HTMLFormElement>(null);
-  const pending = false;
+  const [isPending, setIsPending] = useState(false);
   const [requirePhone, setRequirePhone] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setIsPending(true);
     submitContactForm(new FormData(event.currentTarget))
       .then(() => {
         console.log("sent mail");
         setIsSubmitted(true);
+        event.currentTarget.reset();
       })
       .catch((e) => {
         // handle gracefully
         console.log(e);
+      })
+      .finally(() => {
+        setIsPending(false);
       });
   }
 
@@ -54,20 +60,32 @@ export default function Contact() {
               Huk av hvis du foretrekker å bli kontaktet på telefon
             </label>
           </div>
-          <div className={"mt-5"}>
-            <button
-              disabled={pending}
-              type="submit"
-              className={"bg-sky-500 hover:bg-sky-700 p-2 text-white rounded"}
+
+          <div className={"mt-5 flex justify-end items-center flex-row gap-5"}>
+            {isSubmitted ? (
+              <h2 className={"text-md"}>Takk for din henvendelse!</h2>
+            ) : null}
+            <div
+              className={
+                "bg-sky-500 hover:bg-sky-700  text-white rounded flex flex-row items-center"
+              }
             >
-              {pending ? "Sender..." : "Send"}
-            </button>
+              <button
+                disabled={isPending}
+                type="submit"
+                className={"py-3 px-8"}
+              >
+                {isPending ? "Sender..." : "Send"}
+              </button>
+              <BeatLoader
+                loading={isPending}
+                color="white"
+                className={"mr-3"}
+              />
+            </div>
           </div>
         </fieldset>
       </form>
-      {isSubmitted ? (
-        <h2 className={"text-lg mt-5"}>Takk for din henvendelse!</h2>
-      ) : null}
     </div>
   );
 }
