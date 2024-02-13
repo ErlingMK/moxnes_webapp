@@ -6,7 +6,7 @@ export default function DesktopHeader({ scrollTo }: HeaderProps) {
   return (
     <div
       className={
-        "flex flex-row p-6 justify-between sticky top-0 z-100 bg-main-blue shadow-md"
+        "flex flex-row p-6 justify-between md:sticky top-0 z-100 bg-main-blue shadow-md"
       }
     >
       <TitleHeader />
