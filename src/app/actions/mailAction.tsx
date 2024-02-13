@@ -49,7 +49,7 @@ export async function submitContactForm(formData: FormData) {
   const msg: SendGrid.MailDataRequired = {
     to: email,
     from: email,
-    subject: "Ny hendvelse fra " + input.name,
+    subject: "Ny hendvendelse fra " + input.name,
     text: `Navn: ${input.name}\nE-post: ${input.email}\nTelefon: ${input.phone}\n\n${input.message}`,
     html: createEmailTemplate(input),
   };

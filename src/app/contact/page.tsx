@@ -40,13 +40,13 @@ export default function Contact() {
         className={"flex flex-col gap-2 items-start mx-2"}
       >
         <fieldset>
-          <Input name="name" type="text" header="Fullt navn" />
-          <MultiLineInput name="message" header="Henvendelse" />
-          <Input name="email" type="email" header="E-post" />
+          <Input name="name" type="text" header="Ditt navn" />
+          <MultiLineInput name="message" header="Hva gjelder henvendelsen?" />
+          <Input name="email" type="email" header="Din e-post" />
           <Input
             name="phone"
             type="tel"
-            header="Telefon"
+            header="Ditt telefonnummer"
             required={requirePhone}
           />
           <div className={"flex items-center"}>

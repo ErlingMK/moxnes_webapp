@@ -8,7 +8,8 @@ export default function parseResponse(responses) {
   });
 
   if (!result) {
-    //todo: log error
+    //todo: log rror
+    console.log(responses);
     throw new Error("Unable to send mail");
   }
 }
