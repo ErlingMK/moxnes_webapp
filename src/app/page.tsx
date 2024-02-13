@@ -30,7 +30,7 @@ export default function Home() {
     <div className={"flex flex-col gap-5"}>
       <Header scrollTo={scrollTo} />
       <Image src={frontPhoto} alt="photo of life stages" />
-      <div className={"p-5 flex flex-row gap-5 items-start"}>
+      <div className={"p-5 flex flex-col md:flex-row gap-5 items-start"}>
         <Main />
         <Sidebar />
       </div>

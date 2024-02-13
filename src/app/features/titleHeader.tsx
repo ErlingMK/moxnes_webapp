@@ -5,26 +5,20 @@ export default function TitleHeader() {
     <div className={"flex justify-between gap-5 cursor-pointer text-white"}>
       <div className={"flex flex-col"}>
         <Link href={"/"}>
-          <h1 className={"font-bold md:text-2xl"}>Liv Mette Moxnes</h1>
-          <h2 className={"font-light text-sm"}>Jurist og Coach</h2>
-          <h3 className={"font-light text-sm"}>
+          <p className={"font-bold md:text-2xl"}>Liv Mette Moxnes</p>
+          <p className={"font-light"}>Jurist og Coach</p>
+          <p className={"font-light"}>
             Autorisert av tilsynsrådet for advokat virksomhet
-          </h3>
+          </p>
         </Link>
-
-        <h4 className={"text-sm"}>
-          <a className={"underline text-white"} href={"tel:91379998"}>
-            +47 913 79 998
-          </a>
-        </h4>
-        <h4 className={"text-sm"}>
+        <p className={"text-sm"}>
           <a
             className={"underline text-white"}
-            href={"mailto:liv.mette.moxnes@gmail.com"}
+            href={"mailto:post@moxnesjus.no"}
           >
-            liv.mette.moxnes@gmail.com
+            post@moxnesjus.no
           </a>
-        </h4>
+        </p>
       </div>
     </div>
   );

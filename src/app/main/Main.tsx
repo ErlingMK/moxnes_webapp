@@ -5,7 +5,7 @@ export function Main() {
   return (
     <div className={"flex flex-col gap-12"}>
       <div>
-        <h1 className={"text-xl font-semibold"}>
+        <h1 className={"text-lg md:text-xl font-semibold"}>
           Det er en menneskerettighet å kunne bestemme over seg selv og sitt
           eget liv
         </h1>
