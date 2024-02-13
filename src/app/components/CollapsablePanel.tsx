@@ -20,8 +20,11 @@ export default function CollapsablePanel({
   if (isCollapsed) {
     return (
       <div className={"flex flex-col items-start"}>
-        <h1 className={"font-bold md:w-max"}>{header}</h1>
-        <button className={"underline hover:scale-105"} onClick={toggleState}>
+        <p className={"font-bold w-max"}>{header}</p>
+        <button
+          className={"underline hover:scale-105 self-end"}
+          onClick={toggleState}
+        >
           Trykk for å lese mer
         </button>
       </div>
@@ -29,11 +32,14 @@ export default function CollapsablePanel({
   }
 
   return (
-    <div>
-      <h1 className={"font-bold"}>{header}</h1>
+    <div className={"flex flex-col"}>
+      <p className={"font-bold w-max"}>{header}</p>
       <br />
       {content}
-      <button className={"underline hover:scale-105"} onClick={toggleState}>
+      <button
+        className={"underline hover:scale-105 self-end"}
+        onClick={toggleState}
+      >
         Trykk for å skjule
       </button>
     </div>

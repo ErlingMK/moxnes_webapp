@@ -17,9 +17,10 @@ export default function Contact() {
     setIsPending(true);
     submitContactForm(new FormData(event.currentTarget))
       .then(() => {
-        console.log("sent mail");
+        setRequirePhone(false);
+        setIsPending(false);
         setIsSubmitted(true);
-        event.currentTarget.reset();
+        ref.current?.reset();
       })
       .catch((e) => {
         // handle gracefully
@@ -53,10 +54,10 @@ export default function Contact() {
               onChange={(e) => setRequirePhone(e.target.checked)}
               className={"m-2"}
               type="checkbox"
-              id="preferEmail"
-              name="preferEmail"
+              id="preferPhone"
+              name="preferPhone"
             />
-            <label htmlFor="preferEmail">
+            <label htmlFor="preferPhone">
               Huk av hvis du foretrekker å bli kontaktet på telefon
             </label>
           </div>
