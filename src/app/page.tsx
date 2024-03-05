@@ -1,6 +1,5 @@
 "use client";
 
-import { Sidebar } from "./main/Sidebar";
 import { Main } from "./main/Main";
 import frontPhoto from "./front.jpg";
 import Image from "next/image";
@@ -9,6 +8,9 @@ import { useRef } from "react";
 import Header from "./header";
 import Prices from "./prices/page";
 import Contact from "./contact/page";
+import Introduction from "./features/Introduction";
+import Why from "./features/Why";
+import Missing from "./features/Missing";
 
 export default function Home() {
   const aboutSectionRef = useRef<HTMLElement>(null);
@@ -27,25 +29,44 @@ export default function Home() {
     }
   }
   return (
-    <div className={"flex flex-col gap-5"}>
+    <div className={"flex flex-col"}>
       <Header scrollTo={scrollTo} />
       <Image src={frontPhoto} alt="photo of life stages" />
-      <div className={"p-5 flex flex-col md:flex-row gap-5 items-start"}>
-        <Main />
-        <Sidebar />
+      <div className="p-5 flex flex-col gap-5 lg:gap-36">
+        <section>
+          <Introduction onclick={scrollTo} />
+        </section>
+
+        <section>
+          <hr />
+
+          <Why />
+        </section>
+        <section>
+          <hr />
+
+          <Missing />
+        </section>
+        <section>
+          <hr />
+
+          <Main />
+        </section>
+
+        <section ref={aboutSectionRef}>
+          <hr />
+          <About />
+        </section>
+
+        <section ref={pricesSectionRef}>
+          <hr />
+          <Prices />
+        </section>
+        <section ref={contactSectionRef}>
+          <hr />
+          <Contact />
+        </section>
       </div>
-      <section ref={aboutSectionRef}>
-        <hr />
-        <About />
-      </section>
-      <section ref={pricesSectionRef}>
-        <hr />
-        <Prices />
-      </section>
-      <section ref={contactSectionRef}>
-        <hr />
-        <Contact />
-      </section>
     </div>
   );
 }

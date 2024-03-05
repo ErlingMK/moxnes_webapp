@@ -12,10 +12,7 @@ export default function TitleHeader() {
           </p>
         </Link>
         <p className={"text-sm"}>
-          <a
-            className={"underline text-white"}
-            href={"mailto:post@moxnesjus.no"}
-          >
+          <a className="underline text-white" href={"mailto:post@moxnesjus.no"}>
             post@moxnesjus.no
           </a>
         </p>

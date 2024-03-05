@@ -17,30 +17,20 @@ export default function CollapsablePanel({
   function toggleState(): void {
     setIsCollapsed(!isCollapsed);
   }
-  if (isCollapsed) {
-    return (
-      <div className={"flex flex-col items-start"}>
-        <p className={"font-bold md:w-max"}>{header}</p>
-        <button
-          className={"underline hover:scale-105 self-end"}
-          onClick={toggleState}
-        >
-          Trykk for å lese mer
-        </button>
-      </div>
-    );
-  }
-
   return (
-    <div className={"flex flex-col"}>
+    <div className={"flex flex-col items-start"}>
       <p className={"font-bold md:w-max"}>{header}</p>
-      <br />
-      {content}
+      {isCollapsed ? null : (
+        <div>
+          {" "}
+          <br /> {content}
+        </div>
+      )}
       <button
-        className={"underline hover:scale-105 self-end"}
+        className={"transition underline hover:scale-105 self-end"}
         onClick={toggleState}
       >
-        Trykk for å skjule
+        {isCollapsed ? "Trykk for å lese mer" : "Trykk for å skjule"}
       </button>
     </div>
   );

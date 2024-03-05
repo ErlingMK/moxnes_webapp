@@ -1,5 +1,5 @@
 "use client";
-import DesktopHeader from "@/app/features/desktopHeader";
+import DesktopHeader from "@/app/features/DesktopHeader";
 
 export interface HeaderProps {
   scrollTo: (id: string) => void;
