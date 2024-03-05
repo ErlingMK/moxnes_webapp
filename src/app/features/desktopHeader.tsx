@@ -4,11 +4,7 @@ import { HeaderProps } from "../header";
 
 export default function DesktopHeader({ scrollTo }: HeaderProps) {
   return (
-    <div
-      className={
-        "flex flex-row p-6 justify-between md:sticky top-0 z-100 bg-main-blue shadow-md"
-      }
-    >
+    <div className={"flex flex-row justify-between"}>
       <TitleHeader />
       <div className={"flex flex-row gap-5 items-start text-white"}>
         {pages.map((page) => {
