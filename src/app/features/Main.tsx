@@ -1,6 +1,3 @@
-import CollapsablePanel from "../components/CollapsablePanel";
-import Panel from "../components/Panel";
-
 export function Main() {
   return (
     <div className={"flex flex-col gap-12"}>

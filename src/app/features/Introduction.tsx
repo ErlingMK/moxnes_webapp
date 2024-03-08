@@ -1,10 +1,4 @@
-import Button from "../components/Button";
-
-interface IntroductionProps {
-  onclick: (id: string) => void;
-}
-
-export default function Introduction({ onclick }: IntroductionProps) {
+export default function Introduction() {
   return (
     <div className="flex flex-col items-start">
       <h1 className={"text-lg md:text-xl font-semibold"}>
@@ -20,7 +14,6 @@ export default function Introduction({ onclick }: IntroductionProps) {
 
       <div className="mt-6 space-y-4">
         <p>Ta kontakt for en uforpliktende og kostnadsfri første samtale.</p>
-        <Button text="contact" onclick={onclick} />
       </div>
     </div>
   );

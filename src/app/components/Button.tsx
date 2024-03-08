@@ -1,5 +1,5 @@
 interface ButtonProps {
-  onclick: (id: string) => void;
+  onclick: (param: any) => void;
   text: string;
 }
 

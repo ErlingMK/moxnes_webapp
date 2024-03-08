@@ -68,13 +68,13 @@ export default function Contact() {
             ) : null}
             <div
               className={
-                "bg-sky-500 hover:bg-sky-700  text-white rounded flex flex-row items-center"
+                "bg-sky-500 hover:bg-sky-400  text-white rounded flex flex-row items-center transition shadow-md hover:scale-105"
               }
             >
               <button
                 disabled={isPending}
                 type="submit"
-                className={"py-3 px-8"}
+                className={"py-3 px-8 "}
               >
                 {isPending ? "Sender..." : "Send"}
               </button>

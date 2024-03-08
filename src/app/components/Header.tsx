@@ -1,7 +1,7 @@
 import { pages } from "@/app/utility";
 import { HeaderProps } from "../header";
-import Button from "../components/Button";
-import TitleHeader from "./titleHeader";
+import Button from "./Button";
+import TitleHeader from "./Title";
 
 export default function DesktopHeader({ scrollTo }: HeaderProps) {
   return (

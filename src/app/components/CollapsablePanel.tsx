@@ -22,12 +22,11 @@ export default function CollapsablePanel({
       <p className={"font-bold md:w-max"}>{header}</p>
       {isCollapsed ? null : (
         <div>
-          {" "}
           <br /> {content}
         </div>
       )}
       <button
-        className={"transition underline hover:scale-105 self-end"}
+        className={"transition underline hover:scale-105 self-start"}
         onClick={toggleState}
       >
         {isCollapsed ? "Trykk for å lese mer" : "Trykk for å skjule"}
