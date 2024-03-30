@@ -36,7 +36,7 @@ export default function Home() {
 
       <div>
         <div className="z-10 relative">
-          <video loop autoPlay muted>
+          <video width={1920} height={1080} loop autoPlay muted>
             <source src="videos/loop.mp4" type="video/mp4" />
           </video>
 
