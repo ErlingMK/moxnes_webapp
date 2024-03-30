@@ -3,8 +3,8 @@ export default function Prices() {
     <div className={"flex flex-col gap-12"}>
       <h2 className={"text-lg font-semibold"}>Priser</h2>
       <p>
-        Priser for utarbeidelse av fremtidsfullmakt kr 1200 per time pluss moms.
-        Det vil føres timeliste, og det vil faktureres for hver påbegynte
+        Priser for utarbeidelse av fremtidsfullmakt er 1200kr per time pluss
+        moms. Det vil føres timeliste og det vil faktureres for hver påbegynte
         halvtime.
       </p>
       <p>

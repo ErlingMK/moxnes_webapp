@@ -1,19 +1,24 @@
 export default function Introduction() {
   return (
-    <div className="flex flex-col items-start">
-      <h1 className={"text-lg md:text-xl font-semibold"}>
-        Det er en menneskerettighet å kunne bestemme over seg selv og sitt eget
-        liv
+    <div className="flex flex-col items-start text-white gap-8">
+      <h1 className="text-md font-semibold">
+        Har du tenkt på at du kan bli rammet av en alvorlig sykdom eller ulykke,
+        og at du bør opprette en framtidsfullmakt?
       </h1>
       <p>
-        Ethvert individ skal ha rett til- i tråd med sine egne evner og
-        forutsetninger – til å forme sitt liv etter sine egne ønsker og ideer.
-        En fremtidsfullmakt skal sikre disposisjoner i tråd med fullmaktsgivers
-        ønske i fremtiden. (Fra forarbeidene til Vergemålsloven)
+        Oppretter du en framtidsfullmakt kan du bestemme hvem som skal ta hånd
+        om dine eiendeler og økonomi når du ikke lenger kan det selv. Du kan
+        også i fullmakten bestemme hvordan du vil leve etter at du er blitt syk
+        og eller skadet.
       </p>
 
-      <div className="mt-6 space-y-4">
-        <p>Ta kontakt for en uforpliktende og kostnadsfri første samtale.</p>
+      <p>
+        Både for gamle og unge kan det være lurt å skrive en fremtidsfullmakt.
+      </p>
+      <div className="mt-6">
+        <a href="#contact" className="underline">
+          <p>Ta kontakt for en uforpliktende og kostnadsfri første samtale.</p>
+        </a>
       </div>
     </div>
   );

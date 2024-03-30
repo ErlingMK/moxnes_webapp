@@ -17,6 +17,8 @@ const config: Config = {
         "dark-gray": "#333333",
         "light-gray": "#FAFAFA",
         "main-blue": "#3f6699",
+        "main-blue-faded": "#3f6699DD",
+
         "muted-blue": "#7b97bd",
       },
       fontSize: {

@@ -2,20 +2,14 @@ import Panel from "../components/Panel";
 
 export default function About() {
   return (
-    <div className={"flex flex-col gap-12"}>
+    <div className={"flex flex-col gap-8"}>
       <h2 className={"text-lg font-semibold"}>Hvem er jeg?</h2>
       <p>
-        Jeg er jurist og avla juridisk embetseksamen i 1989. Jeg jobber i dag
-        som seniorrådgiver i kriminalomsorgen. I 2016 utdannet jeg meg som coach
-        ved Erickson coaching Norge.
-      </p>
-
-      <p>Jeg er 63 år og har tre voksne sønner og et barnebarn, og en hund.</p>
-      <p>
-        Utdannelsen som coach har gjort meg bevisst på å stille de riktige
-        spørsmålene for å klargjøre hvilke ønsker/mål klienten har. Jeg tilbyr
-        oppfølging og veiledning i prosessen det er å komme frem til hva
-        fullmakten skal inneholde.
+        Jeg er jurist og jobber til daglig i offentlig forvaltning som
+        seniorrådgiver. Jeg er utdannet coach ved Erickson Nordic coaching. Jeg
+        legger stor vekt på å kunne bistå deg gjennom å stille gode spørsmål
+        slik at du selv kan komme frem til hva som er det beste innholdet i din
+        fremtidsfullmakt.
       </p>
       <p>
         Jeg skriver fullmakten og sørger for at de rettslige rammene som skal

@@ -2,14 +2,21 @@ import { forwardRef } from "react";
 
 interface SectionProps {
   children: React.ReactNode;
+  id?: string;
+  first?: boolean;
 }
 
 const Section = forwardRef<HTMLElement, SectionProps>(
-  ({ children }: SectionProps, ref) => {
+  ({ children, id, first }: SectionProps, ref) => {
     return (
-      <section ref={ref}>
-        <hr />
-        <br />
+      <section ref={ref} id={id}>
+        {first ? null : (
+          <div>
+            <hr />
+            <br />
+          </div>
+        )}
+
         {children}
       </section>
     );

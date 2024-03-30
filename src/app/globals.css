@@ -7,4 +7,6 @@ body {
   @apply bg-light-gray;
   height: 100%;
   font-size: medium;
+  scroll-behavior: smooth;
+
 }
