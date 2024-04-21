@@ -1,24 +1,6 @@
-"use client";
-
-import { useRef } from "react";
 import Introduction from "./features/Introduction";
 
 export default function Home() {
-  const aboutSectionRef = useRef<HTMLElement>(null);
-  const pricesSectionRef = useRef<HTMLElement>(null);
-  const contactSectionRef = useRef<HTMLElement>(null);
-
-  function scrollTo(id: string) {
-    const key = {
-      about: aboutSectionRef,
-      prices: pricesSectionRef,
-      contact: contactSectionRef,
-    }[id];
-
-    if (key && key.current) {
-      key.current.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }
   return (
     <div className={"flex flex-col"}>
       <div>
