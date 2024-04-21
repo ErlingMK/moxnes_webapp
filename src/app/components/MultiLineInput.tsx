@@ -1,5 +1,3 @@
-"use client";
-
 export interface MulitLineInputProps<T> {
   name: string;
   header: string;

@@ -88,10 +88,6 @@ export default function Home() {
         <Section ref={pricesSectionRef}>
           <Prices />
         </Section>
-
-        <Section id="contact" ref={contactSectionRef}>
-          <Page />
-        </Section>
       </div>
     </div>
   );
