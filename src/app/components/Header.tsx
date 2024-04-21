@@ -1,9 +1,10 @@
-import { pages } from "@/app/utility";
-import { HeaderProps } from "../header";
-import Button from "./Button";
-import TitleHeader from "./Title";
+"use client";
 
-export default function DesktopHeader({ scrollTo }: HeaderProps) {
+import { pages } from "@/app/utility";
+import TitleHeader from "./Title";
+import Link from "next/link";
+
+export default function Header() {
   return (
     <div
       className={
@@ -16,7 +17,7 @@ export default function DesktopHeader({ scrollTo }: HeaderProps) {
           return (
             <button
               key={page.link}
-              onClick={() => scrollTo(page.link)}
+              onClick={() => {}}
               className={
                 "transition p-2 hover:underline hover:scale-105 hidden md:block"
               }
@@ -26,7 +27,14 @@ export default function DesktopHeader({ scrollTo }: HeaderProps) {
           );
         })}
 
-        <Button text="contact" onclick={scrollTo} />
+        <Link
+          href="/contact"
+          className={
+            "transition bg-sky-500 hover:bg-sky-400 p-2 text-white rounded shadow-md hover:scale-105"
+          }
+        >
+          Kontakt
+        </Link>
       </div>
     </div>
   );

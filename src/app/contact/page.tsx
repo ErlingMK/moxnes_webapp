@@ -4,9 +4,9 @@ import { FormEvent, useRef, useState } from "react";
 import Input from "../components/Input";
 import MultiLineInput from "../components/MultiLineInput";
 import { submitContactForm } from "../actions/mailAction";
-import { BeatLoader, BounceLoader } from "react-spinners";
+import { BeatLoader } from "react-spinners";
 
-export default function Contact() {
+export default function Page() {
   const ref = useRef<HTMLFormElement>(null);
   const [isPending, setIsPending] = useState(false);
   const [requirePhone, setRequirePhone] = useState(false);

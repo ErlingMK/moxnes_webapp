@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+"use client";
 
 export interface MulitLineInputProps<T> {
   name: string;

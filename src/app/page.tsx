@@ -4,7 +4,7 @@ import About from "./features/About";
 import { useRef } from "react";
 import Header from "./header";
 import Prices from "./features/Prices";
-import Contact from "./features/Contact";
+import Page from "./contact/page";
 import Introduction from "./features/Introduction";
 import Section from "./components/Section";
 import Panel from "./components/Panel";
@@ -27,8 +27,6 @@ export default function Home() {
   }
   return (
     <div className={"flex flex-col"}>
-      <Header scrollTo={scrollTo} />
-
       <div>
         <div className="z-10 relative">
           <video width={1920} height={1080} loop autoPlay muted>
@@ -92,7 +90,7 @@ export default function Home() {
         </Section>
 
         <Section id="contact" ref={contactSectionRef}>
-          <Contact />
+          <Page />
         </Section>
       </div>
     </div>
