@@ -3,9 +3,8 @@ export default function Page() {
     <div className={"flex flex-col gap-5 p-5"}>
       <h2 className={"text-lg font-semibold"}>Priser</h2>
       <p>
-        Priser for utarbeidelse av fremtidsfullmakt er 1200kr per time pluss
-        moms. Det vil føres timeliste og det vil faktureres for hver påbegynte
-        halvtime.
+        Pris for opprettelse av framtidsfullmakt kr. 1000,- per time pluss moms.
+        Det vil bli fakturert per påbegynte halve time.
       </p>
       <p>
         Det kan avtales en fast pris om du ønsker det. Prisen vil da fastsettes

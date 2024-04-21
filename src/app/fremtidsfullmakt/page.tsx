@@ -3,6 +3,7 @@ import Panel from "../components/Panel";
 export default function Page() {
   return (
     <div className="flex flex-col gap-5 p-5">
+      <h2 className={"text-lg font-semibold"}>Fremtidsfullmakt</h2>
       <p>
         Når du gir en annen eller andre en fullmakt, gir du dem rett til å
         opptre på dine vegne i de forholdene som er beskrevet i fullmakten. Den

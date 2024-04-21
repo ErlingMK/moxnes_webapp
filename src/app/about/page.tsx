@@ -3,7 +3,7 @@ import Panel from "../components/Panel";
 export default function Page() {
   return (
     <div className={"flex flex-col gap-5 p-5"}>
-      <h2 className={"text-lg font-semibold"}>Hvem er jeg?</h2>
+      <h2 className={"text-lg font-semibold"}>Om meg</h2>
       <p>
         Jeg er jurist og jobber til daglig i offentlig forvaltning som
         seniorrådgiver. Jeg er utdannet coach ved Erickson Nordic coaching. Jeg
@@ -12,12 +12,17 @@ export default function Page() {
         fremtidsfullmakt.
       </p>
       <p>
-        Jeg skriver fullmakten og sørger for at de rettslige rammene som skal
-        til for at den er gyldig er på plass.
-      </p>
-      <p>
-        Vi møtes på telefonen eller i ett digitalt møte. Jeg kan også komme hjem
-        til deg/dere om det er innenfor en rimelig rekkevidde.
+        Vi møtes på telefonen, i ett digitalt møte eller på kontoret på{" "}
+        <a
+          rel="noreferrer noopener"
+          target="_blank"
+          className="underline"
+          href="https://www.google.com/maps/place/Bydelshuset/@59.2700181,10.4075876,15z/data=!4m2!3m1!1s0x0:0x5353ad55bbe87bb5?sa=X&ved=1t:2428&ictx=111"
+        >
+          bydelshuset i Tønsberg.
+        </a>{" "}
+        Jeg kan også komme hjem til deg/dere om det er innenfor en rimelig
+        rekkevidde.
       </p>
       <Panel
         content={
