@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className={"flex flex-col gap-12 p-5"}>
+    <div className={"flex flex-col gap-5 p-5"}>
       <h2 className={"text-lg font-semibold"}>Priser</h2>
       <p>
         Priser for utarbeidelse av fremtidsfullmakt er 1200kr per time pluss

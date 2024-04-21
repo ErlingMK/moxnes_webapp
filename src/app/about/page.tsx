@@ -1,8 +1,8 @@
 import Panel from "../components/Panel";
 
-export default function About() {
+export default function Page() {
   return (
-    <div className={"flex flex-col gap-8"}>
+    <div className={"flex flex-col gap-5 p-5"}>
       <h2 className={"text-lg font-semibold"}>Hvem er jeg?</h2>
       <p>
         Jeg er jurist og jobber til daglig i offentlig forvaltning som

@@ -5,6 +5,10 @@ export interface Page {
 
 export const pages: Page[] = [
   {
+    title: "Fremtidsfullmakt",
+    link: "fremtidsfullmakt",
+  },
+  {
     title: "Om meg",
     link: "about",
   },
