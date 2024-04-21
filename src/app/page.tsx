@@ -1,16 +1,11 @@
 "use client";
 
-import { Main } from "./features/Main";
-import frontPhoto from "./front.jpg";
-import Image from "next/image";
 import About from "./features/About";
 import { useRef } from "react";
 import Header from "./header";
 import Prices from "./features/Prices";
 import Contact from "./features/Contact";
 import Introduction from "./features/Introduction";
-import Why from "./features/Why";
-import Missing from "./features/Missing";
 import Section from "./components/Section";
 import Panel from "./components/Panel";
 
@@ -46,7 +41,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="p-5 flex flex-col gap-5 lg:gap-36">
+      <div className="p-5 flex flex-col gap-5 lg:gap-12">
         <Section first>
           <div className="flex flex-col gap-8 mt-5">
             <p>

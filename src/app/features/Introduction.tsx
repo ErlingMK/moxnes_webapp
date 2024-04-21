@@ -15,11 +15,9 @@ export default function Introduction() {
       <p>
         Både for gamle og unge kan det være lurt å skrive en fremtidsfullmakt.
       </p>
-      <div className="mt-6">
-        <a href="#contact" className="underline">
-          <p>Ta kontakt for en uforpliktende og kostnadsfri første samtale.</p>
-        </a>
-      </div>
+      <a href="#contact" className="underline">
+        <p>Ta kontakt for en uforpliktende og kostnadsfri første samtale.</p>
+      </a>
     </div>
   );
 }

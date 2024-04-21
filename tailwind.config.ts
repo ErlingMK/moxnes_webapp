@@ -16,8 +16,8 @@ const config: Config = {
         "muted-teal": "#88A0A8",
         "dark-gray": "#333333",
         "light-gray": "#FAFAFA",
-        "main-blue": "#3f6699",
-        "main-blue-faded": "#3f6699DD",
+        "main-blue": "#1a2c4b",
+        "main-blue-faded": "#1a2c4bDD",
 
         "muted-blue": "#7b97bd",
       },
