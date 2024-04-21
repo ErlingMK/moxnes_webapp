@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header";
 import { HydrationOverlay } from "@builder.io/react-hydration-overlay";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <HydrationOverlay>{children}</HydrationOverlay>
+        <Footer />
         <SpeedInsights />
         <Analytics />
       </body>

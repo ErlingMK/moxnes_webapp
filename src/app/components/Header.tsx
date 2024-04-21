@@ -15,15 +15,15 @@ export default function Header() {
       <div className={"flex flex-row gap-5 items-start text-white"}>
         {pages.map((page) => {
           return (
-            <button
+            <Link
+              href={page.link}
               key={page.link}
-              onClick={() => {}}
               className={
                 "transition p-2 hover:underline hover:scale-105 hidden md:block"
               }
             >
               {page.title}
-            </button>
+            </Link>
           );
         })}
 

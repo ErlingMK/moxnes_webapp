@@ -11,11 +11,6 @@ export default function TitleHeader() {
             Autorisert av tilsynsrådet for advokat virksomhet
           </p>
         </Link>
-        <p className={"text-sm"}>
-          <a className="underline text-white" href={"mailto:post@moxnesjus.no"}>
-            post@moxnesjus.no
-          </a>
-        </p>
       </div>
     </div>
   );

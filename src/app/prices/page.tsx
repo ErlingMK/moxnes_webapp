@@ -1,4 +1,4 @@
-export default function Prices() {
+export default function Page() {
   return (
     <div className={"flex flex-col gap-12"}>
       <h2 className={"text-lg font-semibold"}>Priser</h2>

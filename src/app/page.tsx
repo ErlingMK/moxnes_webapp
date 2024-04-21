@@ -2,9 +2,6 @@
 
 import About from "./features/About";
 import { useRef } from "react";
-import Header from "./header";
-import Prices from "./features/Prices";
-import Page from "./contact/page";
 import Introduction from "./features/Introduction";
 import Section from "./components/Section";
 import Panel from "./components/Panel";
@@ -83,10 +80,6 @@ export default function Home() {
 
         <Section ref={aboutSectionRef}>
           <About />
-        </Section>
-
-        <Section ref={pricesSectionRef}>
-          <Prices />
         </Section>
       </div>
     </div>

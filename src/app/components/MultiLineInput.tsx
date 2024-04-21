@@ -3,7 +3,7 @@ export interface MulitLineInputProps<T> {
   header: string;
 }
 
-export default function Input({
+export default function wwInput({
   name,
   header,
 }: MulitLineInputProps<HTMLTextAreaElement>) {
