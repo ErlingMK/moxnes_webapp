@@ -22,9 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <HydrationOverlay>{children}</HydrationOverlay>
-        <Footer />
+        <div className="flex flex-col h-full">
+          <Header />
+          <div className="grow">{children}</div>
+          <Footer />
+        </div>
+
         <SpeedInsights />
         <Analytics />
       </body>
