@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Introduction() {
   return (
     <div className="flex flex-col items-start text-white gap-8">
-      <h1 className="text-md font-semibold">
+      <h1 className="md:text-md font-semibold">
         Har du tenkt på at du kan bli rammet av en alvorlig sykdom eller ulykke,
         og at du bør opprette en framtidsfullmakt?
       </h1>
