@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Introduction() {
   return (
     <div className="flex flex-col items-start text-white gap-8">
@@ -15,9 +17,9 @@ export default function Introduction() {
       <p>
         Både for gamle og unge kan det være lurt å skrive en fremtidsfullmakt.
       </p>
-      <a href="#contact" className="underline">
+      <Link href="contact" className="underline">
         <p>Ta kontakt for en uforpliktende og kostnadsfri første samtale.</p>
-      </a>
+      </Link>
     </div>
   );
 }
