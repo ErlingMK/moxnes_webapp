@@ -6,7 +6,7 @@ export default function Footer() {
         <p className={"text-sm"}>Organisasjonsnummer: 929450035</p>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-3">
         <p className={"text-sm"}>Postboks 50, 3120 Teie Nøtterøy</p>
         <p className={"text-sm"}>
           <span>E-post:</span>

@@ -37,7 +37,7 @@ export default function Page() {
       <form
         onSubmit={onSubmit}
         ref={ref}
-        className={"flex flex-col gap-2 items-start mx-2"}
+        className={"flex flex-col gap-2 items-start"}
       >
         <fieldset>
           <Input name="name" type="text" header="Ditt navn" />

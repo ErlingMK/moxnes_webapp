@@ -14,7 +14,7 @@ export default function wwInput({
         cols={80}
         rows={12}
         className={
-          "m-2 p-3 shadow appearance-none border rounded w-full focus:outline-none focus:shadow-outline focus:border-sky-500"
+          "my-2 p-3 shadow appearance-none border rounded w-full focus:outline-none focus:shadow-outline focus:border-sky-500"
         }
         required
         id={name}
