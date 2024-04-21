@@ -5,7 +5,6 @@ import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header";
-import { HydrationOverlay } from "@builder.io/react-hydration-overlay";
 import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
