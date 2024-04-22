@@ -8,7 +8,7 @@ export default function TitleHeader() {
           <p className={"font-bold md:text-2xl"}>Liv Mette Moxnes</p>
           <p className={"font-light"}>Jurist og Coach</p>
           <p className={"font-light"}>
-            Autorisert av tilsynsrådet for advokat virksomhet
+            Autorisert av Tilsynsrådet for advokat virksomhet
           </p>
         </Link>
       </div>
