@@ -7,7 +7,7 @@ export default function Prices() {
     >
       <h2 className={"text-lg font-semibold"}>Priser</h2>
       <p>
-        Pris for opprettelse av framtidsfullmakt kr. 1000,- per time pluss moms.
+        Pris for opprettelse av fremtidsfullmakt kr. 1000,- per time pluss moms.
         Det vil bli fakturert per påbegynte halve time.
       </p>
       <p>
