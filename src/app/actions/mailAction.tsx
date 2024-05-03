@@ -1,8 +1,7 @@
 "use server";
 import * as SendGrid from "@sendgrid/mail";
 import parseResponse from "./mailHelper";
-
-const email = "post@moxnesjus.no";
+import { email } from "../utility";
 
 type FormInput = {
   name: string;
@@ -12,27 +11,6 @@ type FormInput = {
   preferPhone: boolean;
 };
 
-function validateForm(form: FormData): FormInput {
-  const name = form.get("name")?.toString();
-  const preferPhone = form.has("preferPhone");
-  const message = form.get("message")?.toString();
-  const email = form.get("email")?.toString();
-  const phone = form.get("phone")?.toString();
-
-  if (name === null || message === null || email === null)
-    throw new Error("Invalid form data");
-
-  const input: FormInput = {
-    name: name!,
-    email: email!,
-    message: message!,
-    phone: phone,
-    preferPhone: preferPhone,
-  };
-
-  return input;
-}
-
 export async function submitContactForm(formData: FormData) {
   SendGrid.setApiKey(process.env.SENDGRID_API_KEY!);
 
@@ -41,8 +19,8 @@ export async function submitContactForm(formData: FormData) {
   const reply: SendGrid.MailDataRequired = {
     to: input.email,
     from: email,
-    subject: "Bekreftelse på motatt hendvendelse til Moxnes Jus",
-    text: "Bekrefter hendvendelse til Moxnes Jus. Vi tar kontakt innen 1-2 dager.",
+    subject: "Bekreftelse på mottatt hendvendelse til Moxnes Jus",
+    text: "Bekrefter hendvendelse til Moxnes Jus. Vi tar kontakt innen kort tid.",
     html: createTemplate(input.name, input.message),
   };
 
@@ -131,6 +109,27 @@ function createEmailTemplate({
     </html>`;
 
   return html;
+}
+
+function validateForm(form: FormData): FormInput {
+  const name = form.get("name")?.toString();
+  const preferPhone = form.has("preferPhone");
+  const message = form.get("message")?.toString();
+  const email = form.get("email")?.toString();
+  const phone = form.get("phone")?.toString();
+
+  if (name === null || message === null || email === null)
+    throw new Error("Invalid form data");
+
+  const input: FormInput = {
+    name: name!,
+    email: email!,
+    message: message!,
+    phone: phone,
+    preferPhone: preferPhone,
+  };
+
+  return input;
 }
 
 function createTemplate(name: string, message: string) {

@@ -5,12 +5,16 @@ import Input from "../components/Input";
 import MultiLineInput from "../components/MultiLineInput";
 import { submitContactForm } from "../actions/mailAction";
 import { BeatLoader } from "react-spinners";
+import Popup from "reactjs-popup";
+import { CloseButton } from "../components/Button";
+import { email } from "../utility";
 
 export default function Page() {
   const ref = useRef<HTMLFormElement>(null);
   const [isPending, setIsPending] = useState(false);
   const [requirePhone, setRequirePhone] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -23,8 +27,7 @@ export default function Page() {
         ref.current?.reset();
       })
       .catch((e) => {
-        // handle gracefully
-        console.log(e);
+        setIsError(true);
       })
       .finally(() => {
         setIsPending(false);
@@ -34,6 +37,14 @@ export default function Page() {
   return (
     <div className={"p-5 m-x flex flex-col gap-5"}>
       <h2 className={"text-3xl "}>Ta kontakt</h2>
+      <Popup
+        position="right center"
+        open={isError}
+        onClose={() => setIsError(false)}
+      >
+        <ModalPopup onClose={() => setIsError(false)} />
+      </Popup>
+
       <form
         onSubmit={onSubmit}
         ref={ref}
@@ -87,6 +98,35 @@ export default function Page() {
           </div>
         </fieldset>
       </form>
+    </div>
+  );
+}
+
+interface ModalPopupProps {
+  onClose: () => void;
+}
+
+function ModalPopup({ onClose }: ModalPopupProps) {
+  return (
+    <div className="flex flex-col gap-2 bg-white p-5 border border-gray-300 rounded shadow-lg">
+      <h2 className="text-md">Noe gikk galt</h2>
+      <p>Det skjedde en feil ved innsending av kontaktskjema.</p>
+      <p>
+        Prøv igjen senere eller ta kontakt ved å sende en e-post til{" "}
+        <a href={email} type="email" className="underline">
+          {email}
+        </a>
+      </p>
+      <div className="flex flex-row justify-between mt-5">
+        <CloseButton onclick={onClose} />
+        <a
+          type="email"
+          href="mailto:post@moxnesjus.no"
+          className="transition bg-sky-500 hover:bg-sky-400 p-2 text-white rounded shadow-md text-center"
+        >
+          Opprett og send e-post
+        </a>
+      </div>
     </div>
   );
 }

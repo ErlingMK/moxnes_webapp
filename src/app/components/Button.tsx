@@ -12,7 +12,20 @@ export default function Button({ onclick, text }: ButtonProps) {
       }
       onClick={() => onclick(text)}
     >
-      Kontakt
+      {text}
+    </button>
+  );
+}
+
+export function CloseButton({ onclick }: { onclick: () => void }) {
+  return (
+    <button
+      className={
+        "transition bg-white hover:bg-gray-100 p-2 text-black border border-gray-200 rounded shadow-md hover:scale-105"
+      }
+      onClick={onclick}
+    >
+      Lukk
     </button>
   );
 }

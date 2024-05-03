@@ -17,3 +17,5 @@ export const pages: Page[] = [
     link: "prices",
   },
 ];
+
+export const email = "post@moxnesjus.no";
