@@ -162,8 +162,11 @@ function createTemplate(name: string, message: string) {
                 <h1>Hei, ${name}!</h1>
             </div>
             <div class="content">
-                <p>Dette er en bekreftelse på at vi har motatt din henvendelse. Vi tar kontakt om kort tid.</p>
+                <h2>Dette er en bekreftelse på at vi har motatt din henvendelse. Vi tar kontakt om kort tid.</h2>
+                <p>Her er en kopi av din henvendelse:</p>
+                <br/>
                 <p>${message}</p>
+                <br/>
                 <p>Med vennlig hilsen,</p>
                 <p>Moxnes Jus</p>
             </div>

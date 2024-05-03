@@ -1,0 +1,37 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Welcome Email</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    color: #333333;
+                }
+                .header {
+                    background-color: #f2f2f2;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+                .content {
+                    padding: 20px;
+                    text-align: left;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>Hei, ${name}!</h1>
+            </div>
+            <div class="content">
+                <h2>Dette er en bekreftelse på at vi har motatt din henvendelse. Vi tar kontakt om kort tid.</h2>
+                <p>Her er en kopi av din henvendelse:</p>
+                <br/>
+                <p>${message}</p>
+                <br/>
+                <p>Med vennlig hilsen,</p>
+                <p>Moxnes Jus</p>
+            </div>
+        </body>
+        </html>
