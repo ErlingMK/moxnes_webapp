@@ -1,3 +1,5 @@
+import Mailto from "../features/Mailto";
+
 export default function Footer() {
   return (
     <div className="flex justify-between bg-main-blue text-white p-5">
@@ -9,10 +11,8 @@ export default function Footer() {
       <div className="flex flex-col mb-3">
         <p className={"text-sm"}>Postboks 50, 3120 Teie Nøtterøy</p>
         <p className={"text-sm"}>
-          <span>E-post:</span>
-          <a className="ml-1 underline " href={"mailto:post@moxnesjus.no"}>
-            post@moxnesjus.no
-          </a>
+          <span>E-post: </span>
+          <Mailto />
         </p>
 
         <p className="text-sm">

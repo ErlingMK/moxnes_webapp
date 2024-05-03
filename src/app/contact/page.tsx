@@ -8,6 +8,7 @@ import { BeatLoader } from "react-spinners";
 import Popup from "reactjs-popup";
 import { CloseButton } from "../components/Button";
 import { email } from "../utility";
+import Mailto from "../features/Mailto";
 
 export default function Page() {
   const ref = useRef<HTMLFormElement>(null);
@@ -37,6 +38,7 @@ export default function Page() {
   return (
     <div className={"p-5 m-x flex flex-col gap-5"}>
       <h2 className={"text-3xl "}>Ta kontakt</h2>
+      <button onClick={() => setIsError(true)}>test</button>
       <Popup
         position="right center"
         open={isError}
@@ -112,20 +114,14 @@ function ModalPopup({ onClose }: ModalPopupProps) {
       <h2 className="text-md">Noe gikk galt</h2>
       <p>Det skjedde en feil ved innsending av kontaktskjema.</p>
       <p>
-        Prøv igjen senere eller ta kontakt ved å sende en e-post til{" "}
-        <a href={email} type="email" className="underline">
-          {email}
-        </a>
+        Prøv igjen senere eller ta kontakt ved å sende en e-post til <Mailto />
       </p>
       <div className="flex flex-row justify-between mt-5">
         <CloseButton onclick={onClose} />
-        <a
-          type="email"
-          href="mailto:post@moxnesjus.no"
-          className="transition bg-sky-500 hover:bg-sky-400 p-2 text-white rounded shadow-md text-center"
-        >
-          Opprett og send e-post
-        </a>
+        <Mailto
+          className="transition bg-sky-500 hover:bg-sky-400 p-3 text-white rounded shadow-md text-center hover:scale-105"
+          text="Opprett og send e-post"
+        />
       </div>
     </div>
   );
