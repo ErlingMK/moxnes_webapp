@@ -38,7 +38,6 @@ export default function Page() {
   return (
     <div className={"p-5 m-x flex flex-col gap-5"}>
       <h2 className={"text-3xl "}>Ta kontakt</h2>
-      <button onClick={() => setIsError(true)}>test</button>
       <Popup
         position="right center"
         open={isError}
