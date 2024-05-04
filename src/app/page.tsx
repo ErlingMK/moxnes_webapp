@@ -12,7 +12,7 @@ export default function Home() {
           <video width={1920} height={1080} loop autoPlay muted playsInline>
             <source src="videos/loop.mp4" type="video/mp4" />
           </video>
-          <div className="md:absolute md:top-3/4 md:ml-5 z-20 bg-main-blue-faded p-5 md:mr-5">
+          <div className="md:absolute md:top-1/4 md:ml-5 z-20 bg-main-blue-faded p-5 md:mr-5">
             <Introduction />
           </div>
         </div>
