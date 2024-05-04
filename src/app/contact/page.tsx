@@ -7,10 +7,9 @@ import { submitContactForm } from "../actions/mailAction";
 import { BeatLoader } from "react-spinners";
 import Popup from "reactjs-popup";
 import { CloseButton } from "../components/Button";
-import { email } from "../utility";
 import Mailto from "../features/Mailto";
 
-export default function Page() {
+export default function Contact() {
   const ref = useRef<HTMLFormElement>(null);
   const [isPending, setIsPending] = useState(false);
   const [requirePhone, setRequirePhone] = useState(false);

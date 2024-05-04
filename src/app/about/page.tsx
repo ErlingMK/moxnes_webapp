@@ -2,7 +2,7 @@ import Panel from "../components/Panel";
 
 export default function About() {
   return (
-    <div className={"flex flex-col gap-5 p-5"}>
+    <div className={"flex flex-col gap-5 p-5 "}>
       <h2 className={"text-lg font-semibold"}>Om meg</h2>
       <p>
         Jeg er jurist og jobber til daglig i offentlig forvaltning som
@@ -26,12 +26,10 @@ export default function About() {
       </p>
       <Panel
         content={
-          <div>
-            <p>
-              Jeg har tillatelse fra Tilsynsrådet for advokatvirksomhet og er
-              forsikret for eventuelle feil gjort overfor klient.
-            </p>
-          </div>
+          <p>
+            Jeg har tillatelse fra Tilsynsrådet for advokatvirksomhet og er
+            forsikret for eventuelle feil gjort overfor klient.
+          </p>
         }
       />
     </div>

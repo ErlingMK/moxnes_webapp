@@ -1,4 +1,5 @@
 import About from "./about/page";
+import Contact from "./contact/page";
 import Introduction from "./features/Introduction";
 import FremtidsFullmakt from "./fremtidsfullmakt/page";
 import Prices from "./prices/page";
@@ -17,15 +18,19 @@ export default function Home() {
         </div>
 
         <div className="md:hidden">
+          <Contact />
+        </div>
+
+        <div className="md:hidden">
+          <FremtidsFullmakt />
+        </div>
+
+        <div className="md:hidden">
           <About />
         </div>
 
         <div className="md:hidden">
           <Prices />
-        </div>
-
-        <div className="md:hidden">
-          <FremtidsFullmakt />
         </div>
       </div>
     </div>

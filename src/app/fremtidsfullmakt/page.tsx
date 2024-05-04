@@ -2,7 +2,7 @@ import Panel from "../components/Panel";
 
 export default function FremtidsFullmakt() {
   return (
-    <div className="flex flex-col gap-5 p-5">
+    <div className="flex flex-col gap-5 p-5 md:bg-white md:text-black bg-main-blue-faded text-white">
       <h2 className={"text-lg font-semibold"}>Fremtidsfullmakt</h2>
       <p>
         Når du gir en annen eller andre en fullmakt, gir du dem rett til å
