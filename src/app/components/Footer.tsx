@@ -9,7 +9,7 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col mb-3">
-        <p className={"text-sm"}>Postboks 50, 3120 Teie Nøtterøy</p>
+        <p className={"text-sm"}>Postboks 50 Teie, 3106 Nøtterøy</p>
         <p className={"text-sm"}>
           <span>E-post: </span>
           <Mailto />
