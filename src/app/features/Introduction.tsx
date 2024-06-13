@@ -4,7 +4,7 @@ export default function Introduction() {
   return (
     <div className="flex flex-col items-start text-white gap-8">
       <h1 className="md:text-md font-semibold">
-        Har du tenkt på at du kan bli rammet av en alvorlig sykdom eller ulykke
+        Har du tenkt på at du kan bli rammet av en alvorlig sykdom eller ulykke,
         og ikke lenger kan ivareta deg selv og ditt liv?
       </h1>
       <p>Både unge og gamle kan dessverre oppleve dette.</p>
