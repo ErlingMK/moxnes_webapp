@@ -12,7 +12,7 @@ export default function About() {
         fremtidsfullmakt.
       </p>
       <p>
-        Vi møtes på telefonen, i ett digitalt møte eller på kontoret på{" "}
+        Vi møtes på telefonen, i et digitalt møte eller på kontoret på{" "}
         <a
           rel="noreferrer noopener"
           target="_blank"
