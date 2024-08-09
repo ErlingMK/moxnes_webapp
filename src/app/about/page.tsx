@@ -5,10 +5,10 @@ export default function About() {
     <div className={"flex flex-col gap-5 p-5 "}>
       <h2 className={"text-lg font-semibold"}>Om meg</h2>
       <p>
-        Jeg er jurist og utdannet ved universitetet i Oslo og jobber til daglig i offentlig forvaltning som
+        Jeg er jurist og utdannet ved universitetet i Oslo. Jeg jobber til daglig i offentlig forvaltning som
         seniorrådgiver. Jeg er også utdannet coach ved Erickson Nordic coaching. Jeg
         legger stor vekt på å kunne bistå deg gjennom å stille gode spørsmål
-        slik at du selv kan komme frem til hva som er det beste innholdet i din
+        slik at du selv kan komme frem til hva som vil være det beste innholdet i din
         fremtidsfullmakt.
       </p>
       <p>
